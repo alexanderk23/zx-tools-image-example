@@ -1,0 +1,27 @@
+name: Build ZX Spectrum Project
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/alexanderk23/zx-tools-image:latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Build project
+      run: |
+        make
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: zx-spectrum-build
+        path: output.tap
