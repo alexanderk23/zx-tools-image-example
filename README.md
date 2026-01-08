@@ -11,7 +11,7 @@ to the main branch and performs the following steps:
 1. Checks out the source code from the repository
 2. Runs the build process inside a Docker container with pre-installed ZX Spectrum development tools
 3. Creates ZX Spectrum files (TAP, TRD, SCL, SNA) as build artifacts (in this example using Makefile, but this can be changed in the workflow to shell scripts, individual commands, etc.)
-4. Uploads these files as [downloadable artifacts](https://github.com/alexanderk23/zx-tools-image-example/actions)
+4. Uploads these files as [downloadable artifacts](https://github.com/alexanderk23/zx-tools-image-example/actions/runs/20826685890)
 5. Creates [GitHub releases](https://github.com/alexanderk23/zx-tools-image-example/releases) when you tag your repository with version numbers like `v1.0.0`
 
 ### Release Process
