@@ -24,4 +24,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: zx-spectrum-build
-        path: output.tap
+        path: example.tap
