@@ -13,7 +13,7 @@ SNA = $(PROJECT_NAME).sna
 
 .PHONY: clean all sna tap trd scl
 
-all: sna tap trd scl
+all: sna tap trd
 sna: $(SNA)
 tap: $(TAP)
 trd: $(TRD)
